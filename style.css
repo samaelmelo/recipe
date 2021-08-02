@@ -1,0 +1,371 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --font-title: "Playfair Display", serif;
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  padding: 3.2rem 1.9rem 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header h1 {
+  font: 700 2.4rem var(--font-title);
+  margin-block-end: 1.2rem;
+}
+header p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-inline-start: 1.2rem;
+  padding-block-end: 1.2rem;
+}
+
+header .header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  padding-inline: 1.2rem;
+}
+main img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-block-end: 2.4rem;
+}
+
+.icon {
+  display: flex;
+  gap: 0.6rem;
+  margin-block-end: 2rem;
+}
+.icon .menu {
+  color: #f2994a;
+}
+.icon .serving p:nth-of-type(1) {
+  color: #BDBDBD;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.icon .serving p:nth-of-type(2) {
+  color: #f2994a;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main .time-preparation {
+  padding-inline-end: 3rem;
+}
+main section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 3rem;
+}
+main .hour {
+  display: flex;
+}
+main .hour .clock {
+  margin-inline-end: 0.5rem;
+  color: #4f4f4f;
+}
+main .hour .time p:first-child {
+  text-transform: uppercase;
+  color: #BDBDBD;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+main .hour .time p:last-child {
+  font-size: 1rem;
+  color: #333333;
+}
+main #salted {
+  font-weight: 500;
+}
+
+main .ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .ingredients h2 {
+  margin-block: 2.5rem;
+  font: 700 1.8rem var(--font-title);
+  color: #333333;
+}
+main .ingredients .grahan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-block-end: 0;
+  gap: 1rem;
+}
+main .ingredients .grahan h2 {
+  font: 400 italic 1.6rem var(--font-title);
+}
+main .ingredients p {
+  font: 400 1.4rem Montserrat;
+}
+main .ingredients p span {
+  font: 700 1.4rem Montserrat;
+  color: #333333;
+}
+main .ingredients .line {
+  display: flex;
+  align-items: flex-start;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+main .ingredients .line input {
+  margin-inline-end: 1rem;
+  -ms-transform: scale(1.5);
+  /* IE */
+  -moz-transform: scale(1.5);
+  /* FF */
+  -webkit-transform: scale(1.5);
+  /* Safari and Chrome */
+  -o-transform: scale(1.5);
+  /* Opera */
+  transform: scale(1.5);
+  padding: 10px;
+}
+main .ingredients .chesecake {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .ingredients .chesecake h2 {
+  font: 400 italic 1.8rem var(--font-title);
+  margin-block-end: 2.5rem;
+  color: #333333;
+}
+main .ingredients .chesecake .line {
+  padding-block: 1rem;
+}
+
+main .instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+main .instructions .line p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+main .instructions .line p span {
+  font-weight: 700;
+}
+main .instructions .line .retangle {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #f2994a;
+  margin-inline-end: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .instructions .line .retangle p {
+  font: 700 2.4rem var(--font-title);
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 1.6rem;
+}
+
+.back-to-top {
+  width: 6rem;
+  height: 6rem;
+  padding: 2rem;
+  border-radius: 50%;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #1c1c1cb7;
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.back-to-top:hover {
+  color: #cccccc;
+}
+
+footer {
+  padding-block-end: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p, footer a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+footer a {
+  font-weight: 700;
+  color: #1c1c1c;
+  transition: 0.3 ease;
+  padding-block: 2rem;
+}
+footer a:hover {
+  opacity: 0.6;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+[data-anime=left] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime=right] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+/*
+MAX-WIDTH: -> do 0 ao MAX-WIDTH terá esta configuração
+MIN-WIDTH: -> a partir do MIN-WIDTH terá esta configuração
+*/
+@media screen and (min-width: 980px) {
+  body {
+    padding-inline: 10%;
+  }
+
+  header {
+    max-width: 650px;
+  }
+  header h1 {
+    font-size: 4.8rem;
+  }
+  header .header img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  header .header p {
+    font-size: 1.4rem;
+  }
+
+  aside {
+    padding-block-start: 5rem;
+    width: 20rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.226);
+    border-radius: 1.2rem;
+    background-color: #ffffff;
+    position: absolute;
+    right: 11%;
+  }
+  aside .icon {
+    flex-direction: row;
+    justify-content: center;
+  }
+  aside .icon .menu {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  aside .icon .serving p:nth-of-type(1) {
+    font-size: 1rem;
+  }
+  aside .icon .serving p:nth-of-type(2) {
+    font-size: 1.4rem;
+  }
+  aside .time-preparation {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  aside .time-preparation .hour .time p:first-child {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  aside .time-preparation .hour .time p:last-child {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  main .ingredients h2 {
+    font-size: 2.4rem;
+  }
+
+  main .ingredients {
+    max-width: 550px;
+  }
+
+  main .ingredients .grahan h2 {
+    font-size: 1.8rem;
+  }
+
+  main .ingredients .grahan p,
+main .chesecake .line p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  main .hour {
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .hour:nth-of-type(2) {
+    margin-left: -1.7rem;
+  }
+  main .hour:nth-of-type(3) {
+    margin-left: -0.6rem;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    padding-inline: 10%;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
